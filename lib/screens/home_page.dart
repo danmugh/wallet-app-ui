@@ -93,21 +93,21 @@ class _HomePageState extends State<HomePage> {
                 controller: _controller,
                 children: [
                   MyCard(
-                    balance: 5256.20,
+                    balance: 3256.20,
                     cardNumber: 12345678,
                     expiryMonth: 10,
                     expiryYear: 24,
                     color: Colors.deepPurple[300],
                   ),
                   MyCard(
-                    balance: 5252.20,
+                    balance: 1282.20,
                     cardNumber: 12345678,
                     expiryMonth: 10,
                     expiryYear: 24,
                     color: Colors.blue[300],
                   ),
                   MyCard(
-                    balance: 5254.20,
+                    balance: 6754.20,
                     cardNumber: 12345678,
                     expiryMonth: 10,
                     expiryYear: 24,
