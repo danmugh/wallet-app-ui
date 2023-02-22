@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
