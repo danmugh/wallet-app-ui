@@ -1,12 +1,16 @@
+name: Test, Build and Release apk
+
 on:
   push:
     tags:
-      - '*'
-name: Test, Build and Release apk
+      - 'v1.1'
+
 jobs:
   build:
     name: Build APK
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
