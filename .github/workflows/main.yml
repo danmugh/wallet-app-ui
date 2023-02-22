@@ -1,4 +1,6 @@
 on: push
+tags:
+  - 'v1.1'
 name: Test, Build and Release apk
 jobs:
   build:
@@ -22,5 +24,6 @@ jobs:
       - name: Create a Release APK
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/app/outputs/apk/debug/*.apk"
+          artifacts: "release.tar.gz,foo/*.txt"
+          bodyFile: "body.md"
           token: ${{ secrets.TOKEN }}
